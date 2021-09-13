@@ -37,10 +37,21 @@ In general, a learning problem considers a set of n samples of data and then tri
 entryを項目って訳すんですね。multivariate dataという単語は覚えておいて損なさそう。2文目はIf節が長くて訳しにくかったが、SVを意識して読むとわかりやすいかも。1文目はand thenが間にあるので、スムーズに前から訳して良いパターンでした。
 
 Learning problems fall into a few categories:
+> 学習問題はいくつかのカテゴリーに分類されます。
+
+fall intoって分類されるという意味なのか。勉強になる。
 
 supervised learning, in which the data comes with additional attributes that we want to predict (Click here to go to the scikit-learn supervised learning page).This problem can be either:
+> 教師付き学習では、データに予測したい属性が付加されています（ここをクリックすると、scikit-learnの教師付き学習のページに移動します）。
+
+教師あり学習のほうが有名な和訳だが、DeepLなのでしかたない。脳内で読み替えていこう
 
 classification: samples belong to two or more classes and we want to learn from already labeled data how to predict the class of unlabeled data. An example of a classification problem would be handwritten digit recognition, in which the aim is to assign each input vector to one of a finite number of discrete categories. Another way to think of classification is as a discrete (as opposed to continuous) form of supervised learning where one has a limited number of categories and for each of the n samples provided, one is to try to label them with the correct category or class.
+> 自分の和訳：サンプルが2つ以上のクラスに属していて、すでにラベルを振ってあるデータからどうやってまだラベルの無いデータを予測するか学びたいとき。たとえば手書きの数字認識が分類問題の一例です。その目的はそれぞれの入力を有限の離散したカテゴリに割り当てることです。他に分類問題について考える方法は、有限個数のカテゴリとそれぞれにN個のサンプルが当てられたものと、もう一方に正しいカテゴリやクラスをラベルとしてあてがうことを教師あり学習することです。
+
+> 分類：サンプルが2つ以上のクラスに属し、すでにラベル付けされたデータから、ラベル付けされていないデータのクラスを予測する方法を学習したい場合。分類問題の例としては、手書きの数字の認識があります。この問題では、各入力ベクトルを有限個の離散的なカテゴリーの1つに割り当てることが目的です。分類問題を別の方法で考えると、（連続的ではなく）離散的な形態の教師付き学習で、限られた数のカテゴリーがあり、与えられたn個のサンプルのそれぞれについて、正しいカテゴリーまたはクラスにラベル付けしようとするものです。
+
+ちょっと文法がダメすぎるというか、長い文章になると主語述語が読み取れなくて辛い。学びなおしかなぁ
 
 regression: if the desired output consists of one or more continuous variables, then the task is called regression. An example of a regression problem would be the prediction of the length of a salmon as a function of its age and weight.
 
