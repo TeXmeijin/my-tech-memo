@@ -16,6 +16,7 @@ params:
           url: "https://github.com/TeXmeijin"
         - name: dev
           url: "https://dev.to/texmeijin"
+    defaultTheme: dark
     ShowReadingTime: true
     ShowShareButtons: true
     ShowPostNavLinks: true
@@ -23,3 +24,10 @@ params:
 
     assets:
       favicon: "https://texmeijin.github.io/my-tech-memo/favicon.ico"
+
+menu:
+  main:
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
