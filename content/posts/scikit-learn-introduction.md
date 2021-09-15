@@ -1,8 +1,8 @@
 ---
-tags: ML
+title: "[WIP]scikit-learn入門"
+date: 2021-09-14T22:09:27+09:00
+tags: [ML]
 ---
-
-# [WIP]scikit-learn入門
 
 ## 目標
 

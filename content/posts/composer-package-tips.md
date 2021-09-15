@@ -1,8 +1,8 @@
 ---
-tags: PHP
+tags: [PHP]
+title: composerで公開されていないライブラリをGitHubから直接利用する
+date: 2021-09-13T23:49:53+09:00
 ---
-
-# composerで公開されていないライブラリをGitHubから直接利用する
 
 https://getcomposer.org/doc/05-repositories.md#package-2
 

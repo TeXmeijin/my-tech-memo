@@ -1,8 +1,8 @@
 ---
-tags: CSS
+title: "overscroll-behavior-x"
+date: 2021-09-14T21:52:35+09:00
+tags: [CSS]
 ---
-
-# overscroll-behavior-x
 
 ## 背景
 overscroll-behavior-x
