@@ -25,10 +25,11 @@ import { View } from &#34;../components/Themed&#34;; import { WebView } from &#3
 <meta property="og:description" content="refを使って、onReloadといった任意のイベントハンドラでcurrent!.reload()させると手動でリロードが出来ます。 普通はpullToRefreshEnabledを使えば対応できると思いますが、こういう方法もあるということで。
 import { View } from &#34;../components/Themed&#34;; import { WebView } from &#34;react-native-webview&#34;; import { Fab, Icon } from &#34;native-base&#34;; import { AntDesign } from &#34;@expo/vector-icons&#34;; export default function WebviewScreen() { const webview = useRef<WebView>(null) const onReload = () => { webview.current!.reload() } return ( <View style={styles.container}> <WebView ref={webview} pullToRefreshEnabled={true} source={{ uri: &#34;https://expo.dev&#34;, }} /> <Fab right={30} bottom={60} icon={ <Icon color={&#34;white&#34;} as={<AntDesign name={&#34;heart&#34;}/>} /> } onTouchEnd={onReload} /> </View> ); } ">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://texmeijin.github.io/my-tech-memo/posts/rn-webview-reload/"><meta property="article:section" content="posts">
+<meta property="og:url" content="https://texmeijin.github.io/my-tech-memo/posts/rn-webview-reload/"><meta property="og:image" content="https://texmeijin.github.io/my-tech-memo/site-feature-image.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-09-15T12:03:00+09:00">
 <meta property="article:modified_time" content="2021-09-15T12:03:00+09:00">
-<meta name=twitter:card content="summary">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://texmeijin.github.io/my-tech-memo/site-feature-image.png">
 <meta name=twitter:title content="React NativeでWebviewを使った際にユーザーのアクションでリロードさせる">
 <meta name=twitter:description content="refを使って、onReloadといった任意のイベントハンドラでcurrent!.reload()させると手動でリロードが出来ます。 普通はpullToRefreshEnabledを使えば対応できると思いますが、こういう方法もあるということで。
 import { View } from &#34;../components/Themed&#34;; import { WebView } from &#34;react-native-webview&#34;; import { Fab, Icon } from &#34;native-base&#34;; import { AntDesign } from &#34;@expo/vector-icons&#34;; export default function WebviewScreen() { const webview = useRef<WebView>(null) const onReload = () => { webview.current!.reload() } return ( <View style={styles.container}> <WebView ref={webview} pullToRefreshEnabled={true} source={{ uri: &#34;https://expo.dev&#34;, }} /> <Fab right={30} bottom={60} icon={ <Icon color={&#34;white&#34;} as={<AntDesign name={&#34;heart&#34;}/>} /> } onTouchEnd={onReload} /> </View> ); } ">

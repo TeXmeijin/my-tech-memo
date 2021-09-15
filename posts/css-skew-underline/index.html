@@ -25,10 +25,11 @@ import { css } from 'linaria'; import { ReactNode } from 'react'; type Props = {
 <meta property="og:description" content="ざっと以下のようなコンポーネントを実装するといい。
 import { css } from 'linaria'; import { ReactNode } from 'react'; type Props = { children: ReactNode; }; const style = css` display: flex; padding: 4px 0; margin-left: 8px; position: relative; white-space: nowrap; z-index: 1; &:after { content: ''; position: absolute; top: 12px; left: -6px; width: calc(100% + 6px); height: 12px; background: #fdfdfd; transform: skewX(-20deg); z-index: -1; } `; export const Underlined = ({ children }: Props) => { return <span className={style}>{children}</span>; }; ポイント skew transform: skewX(-20deg); これで右方向に少し歪んだ図形が作れる。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://texmeijin.github.io/my-tech-memo/posts/css-skew-underline/"><meta property="article:section" content="posts">
+<meta property="og:url" content="https://texmeijin.github.io/my-tech-memo/posts/css-skew-underline/"><meta property="og:image" content="https://texmeijin.github.io/my-tech-memo/site-feature-image.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-09-14T22:01:53+09:00">
 <meta property="article:modified_time" content="2021-09-14T22:01:53+09:00">
-<meta name=twitter:card content="summary">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://texmeijin.github.io/my-tech-memo/site-feature-image.png">
 <meta name=twitter:title content="文字列に平行四辺形の下線を引く">
 <meta name=twitter:description content="ざっと以下のようなコンポーネントを実装するといい。
 import { css } from 'linaria'; import { ReactNode } from 'react'; type Props = { children: ReactNode; }; const style = css` display: flex; padding: 4px 0; margin-left: 8px; position: relative; white-space: nowrap; z-index: 1; &:after { content: ''; position: absolute; top: 12px; left: -6px; width: calc(100% + 6px); height: 12px; background: #fdfdfd; transform: skewX(-20deg); z-index: -1; } `; export const Underlined = ({ children }: Props) => { return <span className={style}>{children}</span>; }; ポイント skew transform: skewX(-20deg); これで右方向に少し歪んだ図形が作れる。">
