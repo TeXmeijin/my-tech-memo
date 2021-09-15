@@ -6,13 +6,16 @@ theme: "PaperMod"
 params:
     env: production
     description: "Web page where Meijin aggregates my daily learning notes on technology."
+    homeInfoParams:
+      Title: Meijin Tech Memo
+      Content: 名人が日々の技術に関するちょっとした学習メモを集約しているWebページです
     socialIcons:
         - name: twitter
-          url: "https://twitter.com/"
-        - name: stackoverflow
-          url: "https://stackoverflow.com"
+          url: "https://twitter.com/meijin_garden"
         - name: github
-          url: "https://github.com/"
+          url: "https://github.com/TeXmeijin"
+        - name: dev
+          url: "https://dev.to/texmeijin"
     ShowReadingTime: true
     ShowShareButtons: true
     ShowPostNavLinks: true
