@@ -74,6 +74,18 @@
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>React NativeでWebviewを使った際にユーザーのアクションでリロードさせる
+</h2>
+</header>
+<section class=entry-content>
+<p>refを使って、onReloadといった任意のイベントハンドラでcurrent!.reload()させると手動でリロードが出来ます。 普通はpullToRefreshEnabledを使えば対応できると思いますが、こういう方法もあるということで。
+import { View } from "../components/Themed"; import { WebView } from "react-native-webview"; import { Fab, Icon } from "native-base"; import { AntDesign } from "@expo/vector-icons"; export default function WebviewScreen() { const webview = useRef&lt;WebView>(null) const onReload = () => { webview.current!.reload() } return ( &lt;View style={styles.container}> &lt;WebView ref={webview} pullToRefreshEnabled={true} source={{ uri: "https://expo.dev", }} /> &lt;Fab right={30} bottom={60} icon={ &lt;Icon color={"white"} as={&lt;AntDesign name={"heart"}/>} /> } onTouchEnd={onReload} /> &lt;/View> ); } </p>
+</section>
+<footer class=entry-footer>September 15, 2021&nbsp;·&nbsp;1 min</footer>
+<a class=entry-link aria-label="post link to React NativeでWebviewを使った際にユーザーのアクションでリロードさせる" href=https://texmeijin.github.io/my-tech-memo/posts/rn-webview-reload/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>[WIP]scikit-learn入門
 </h2>
 </header>
@@ -139,18 +151,6 @@ https://kossy-web-engineer.hatenablog.com/entry/2020/09/01/223101</p>
 </section>
 <footer class=entry-footer>September 14, 2021&nbsp;·&nbsp;1 min</footer>
 <a class=entry-link aria-label="post link to Dayjsのコンストラクタに渡せる、Date型とか文字列型のUnion型はDayjs側で提供されている" href=https://texmeijin.github.io/my-tech-memo/posts/dayjs-types-tips/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>React NativeでWebviewを使った際にユーザーのアクションでリロードさせる
-</h2>
-</header>
-<section class=entry-content>
-<p>refを使って、onReloadといった任意のイベントハンドラでcurrent!.reload()させると手動でリロードが出来ます。 普通はpullToRefreshEnabledを使えば対応できると思いますが、こういう方法もあるということで。
-import { View } from "../components/Themed"; import { WebView } from "react-native-webview"; import { Fab, Icon } from "native-base"; import { AntDesign } from "@expo/vector-icons"; export default function WebviewScreen() { const webview = useRef&lt;WebView>(null) const onReload = () => { webview.current!.reload() } return ( &lt;View style={styles.container}> &lt;WebView ref={webview} pullToRefreshEnabled={true} source={{ uri: "https://expo.dev", }} /> &lt;Fab right={30} bottom={60} icon={ &lt;Icon color={"white"} as={&lt;AntDesign name={"heart"}/>} /> } onTouchEnd={onReload} /> &lt;/View> ); } </p>
-</section>
-<footer class=entry-footer>September 14, 2021&nbsp;·&nbsp;1 min</footer>
-<a class=entry-link aria-label="post link to React NativeでWebviewを使った際にユーザーのアクションでリロードさせる" href=https://texmeijin.github.io/my-tech-memo/posts/rn-webview-reload/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
