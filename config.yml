@@ -22,6 +22,8 @@ params:
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
 
+    images:
+      - site-feature-image.png
     assets:
       favicon: "https://texmeijin.github.io/my-tech-memo/favicon.ico"
 
