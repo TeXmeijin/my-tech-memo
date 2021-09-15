@@ -19,4 +19,4 @@ params:
     ShowBreadCrumbs: true
 
     assets:
-      favicon: "/favicon.ico"
+      favicon: "https://texmeijin.github.io/my-tech-memo/favicon.ico"
