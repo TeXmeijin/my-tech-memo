@@ -22,7 +22,6 @@ clearMocks: true を書き足す">
 <meta name=generator content="Hugo 0.88.1">
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
-<style>@media(prefers-color-scheme:dark){:root{--theme:#1d1e20;--entry:#2e2e33;--primary:rgba(255, 255, 255, 0.84);--secondary:rgba(255, 255, 255, 0.56);--tertiary:rgba(255, 255, 255, 0.16);--content:rgba(255, 255, 255, 0.74);--hljs-bg:#2e2e33;--code-bg:#37383e;--border:#333}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript><meta property="og:title" content="jestで各テストケースの前にかならずモックをクリアする">
 <meta property="og:description" content="https://jestjs.io/ja/docs/configuration#clearmocks-boolean
 jest.config.jsに
@@ -39,8 +38,8 @@ clearMocks: true を書き足す">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://texmeijin.github.io/my-tech-memo/posts/"},{"@type":"ListItem","position":2,"name":"jestで各テストケースの前にかならずモックをクリアする","item":"https://texmeijin.github.io/my-tech-memo/posts/jest-mock-clear-always/"}]}</script>
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"jestで各テストケースの前にかならずモックをクリアする","name":"jestで各テストケースの前にかならずモックをクリアする","description":"https://jestjs.io/ja/docs/configuration#clearmocks-boolean\njest.config.jsに\nclearMocks: true を書き足す","keywords":["jest","javascript"],"articleBody":"https://jestjs.io/ja/docs/configuration#clearmocks-boolean\njest.config.jsに\nclearMocks: true を書き足す\n","wordCount":"5","inLanguage":"en","datePublished":"2021-09-14T22:08:15+09:00","dateModified":"2021-09-14T22:08:15+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://texmeijin.github.io/my-tech-memo/posts/jest-mock-clear-always/"},"publisher":{"@type":"Organization","name":"Meijin Tech Memo","logo":{"@type":"ImageObject","url":"https://texmeijin.github.io/my-tech-memo/favicon.ico"}}}</script>
 </head>
-<body id=top>
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<body class=dark id=top>
+<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
@@ -51,6 +50,11 @@ clearMocks: true を書き足す">
 </span>
 </div>
 <ul id=menu>
+<li>
+<a href=https://texmeijin.github.io/my-tech-memo/tags/ title=Tags>
+<span>Tags</span>
+</a>
+</li>
 </ul>
 </nav>
 </header>

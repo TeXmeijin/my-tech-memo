@@ -21,7 +21,6 @@ X軸方向にスクロールしたとき、要素の両端に到達したとき�
 <meta name=generator content="Hugo 0.88.1">
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
-<style>@media(prefers-color-scheme:dark){:root{--theme:#1d1e20;--entry:#2e2e33;--primary:rgba(255, 255, 255, 0.84);--secondary:rgba(255, 255, 255, 0.56);--tertiary:rgba(255, 255, 255, 0.16);--content:rgba(255, 255, 255, 0.74);--hljs-bg:#2e2e33;--code-bg:#37383e;--border:#333}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript><meta property="og:title" content="overscroll-behavior-x">
 <meta property="og:description" content="背景 overscroll-behavior-x https://developer.mozilla.org/ja/docs/Web/CSS/overscroll-behavior-x
 X軸方向にスクロールしたとき、要素の両端に到達したときブラウザ標準の挙動を引き起こさないために指定する">
@@ -36,8 +35,8 @@ X軸方向にスクロールしたとき、要素の両端に到達したとき�
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://texmeijin.github.io/my-tech-memo/posts/"},{"@type":"ListItem","position":2,"name":"overscroll-behavior-x","item":"https://texmeijin.github.io/my-tech-memo/posts/css-overflow-scroll-behavior/"}]}</script>
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"overscroll-behavior-x","name":"overscroll-behavior-x","description":"背景 overscroll-behavior-x https://developer.mozilla.org/ja/docs/Web/CSS/overscroll-behavior-x\nX軸方向にスクロールしたとき、要素の両端に到達したときブラウザ標準の挙動を引き起こさないために指定する","keywords":["CSS"],"articleBody":"背景 overscroll-behavior-x https://developer.mozilla.org/ja/docs/Web/CSS/overscroll-behavior-x\nX軸方向にスクロールしたとき、要素の両端に到達したときブラウザ標準の挙動を引き起こさないために指定する\n","wordCount":"4","inLanguage":"en","datePublished":"2021-09-14T21:52:35+09:00","dateModified":"2021-09-14T21:52:35+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://texmeijin.github.io/my-tech-memo/posts/css-overflow-scroll-behavior/"},"publisher":{"@type":"Organization","name":"Meijin Tech Memo","logo":{"@type":"ImageObject","url":"https://texmeijin.github.io/my-tech-memo/favicon.ico"}}}</script>
 </head>
-<body id=top>
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<body class=dark id=top>
+<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
@@ -48,6 +47,11 @@ X軸方向にスクロールしたとき、要素の両端に到達したとき�
 </span>
 </div>
 <ul id=menu>
+<li>
+<a href=https://texmeijin.github.io/my-tech-memo/tags/ title=Tags>
+<span>Tags</span>
+</a>
+</li>
 </ul>
 </nav>
 </header>
