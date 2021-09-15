@@ -1,4 +1,0 @@
-baseURL = 'https://texmeijin.github.io/my-tech-memo/'
-languageCode = 'ja-JP'
-title = 'Meijin Tech Memo'
-theme = "paper"

@@ -1,0 +1,22 @@
+baseURL: 'https://texmeijin.github.io/my-tech-memo/'
+languageCode: 'ja-JP'
+title: 'Meijin Tech Memo'
+theme: "PaperMod"
+
+params:
+    env: production
+    description: "Web page where Meijin aggregates my daily learning notes on technology."
+    socialIcons:
+        - name: twitter
+          url: "https://twitter.com/"
+        - name: stackoverflow
+          url: "https://stackoverflow.com"
+        - name: github
+          url: "https://github.com/"
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+
+    assets:
+      favicon: "/favicon.ico"
