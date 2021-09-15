@@ -31,3 +31,7 @@ menu:
       name: Tags
       url: /tags/
       weight: 20
+    - identifier: portfolio
+      name: Portfolio
+      url: https://meijin.dev
+      weight: 30
