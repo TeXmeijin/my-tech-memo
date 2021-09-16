@@ -58,5 +58,5 @@ export function generateCardHtml(url: string) {
 
 つまるところ、ざっくりいえば以下の手順でこの実装が実現できるはず。
 
-- iframe用の専用のサイトを立ち上げて公開、iframe埋め込みは許可する（https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/X-Frame-Options）
+- iframe用の専用のサイトを立ち上げて公開、iframe埋め込みは許可する（ https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/X-Frame-Options ）
 - markdownのパーサーでURLのパースをカードに切り替える
