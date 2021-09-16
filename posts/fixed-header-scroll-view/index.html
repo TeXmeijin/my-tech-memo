@@ -3,7 +3,7 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>固定ヘッダーを利用しているときに、scrollIntoViewでスクロールした先が隠れてしまう問題を解消する | Meijin Tech Memo</title>
+<title>固定ヘッダーを利用しているときに、scrollIntoViewでスクロールした先が隠れてしまう問題を解消する | Meijin's Tech Tips</title>
 <meta name=keywords content="CSS">
 <meta name=description content="scroll-margin-top: 70px; これで解決できます。
 scroll into view fixed headerでググりました。
@@ -46,14 +46,14 @@ https://stackoverflow.com/questions/13614112/using-scrollintoview-with-a-fixed-p
  と思いきや、2021年9月現在Safariで動作しないので、以下の記事のように力技で対応する必要がある。辛い。
 https://zenn.dev/catnose99/articles/75d3c69bf71bad">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://tech-memo.meijin.dev/posts/"},{"@type":"ListItem","position":2,"name":"固定ヘッダーを利用しているときに、scrollIntoViewでスクロールした先が隠れてしまう問題を解消する","item":"https://tech-memo.meijin.dev/posts/fixed-header-scroll-view/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"固定ヘッダーを利用しているときに、scrollIntoViewでスクロールした先が隠れてしまう問題を解消する","name":"固定ヘッダーを利用しているときに、scrollIntoViewでスクロールした先が隠れてしまう問題を解消する","description":"scroll-margin-top: 70px; これで解決できます。\nscroll into view fixed headerでググりました。\nhttps://www.bram.us/2020/03/01/prevent-content-from-being-hidden-underneath-a-fixed-header-by-using-scroll-margin-top/\nhttps://stackoverflow.com/questions/13614112/using-scrollintoview-with-a-fixed-position-header\n と思いきや、2021年9月現在Safariで動作しないので、以下の記事のように力技で対応する必要がある。辛い。\nhttps://zenn.dev/catnose99/articles/75d3c69bf71bad","keywords":["CSS"],"articleBody":"scroll-margin-top: 70px; これで解決できます。\nscroll into view fixed headerでググりました。\nhttps://www.bram.us/2020/03/01/prevent-content-from-being-hidden-underneath-a-fixed-header-by-using-scroll-margin-top/\nhttps://stackoverflow.com/questions/13614112/using-scrollintoview-with-a-fixed-position-header\n と思いきや、2021年9月現在Safariで動作しないので、以下の記事のように力技で対応する必要がある。辛い。\nhttps://zenn.dev/catnose99/articles/75d3c69bf71bad\n","wordCount":"12","inLanguage":"en","datePublished":"2021-09-14T22:03:50+09:00","dateModified":"2021-09-14T22:03:50+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://tech-memo.meijin.dev/posts/fixed-header-scroll-view/"},"publisher":{"@type":"Organization","name":"Meijin Tech Memo","logo":{"@type":"ImageObject","url":"https://texmeijin.github.io/my-tech-memo/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"固定ヘッダーを利用しているときに、scrollIntoViewでスクロールした先が隠れてしまう問題を解消する","name":"固定ヘッダーを利用しているときに、scrollIntoViewでスクロールした先が隠れてしまう問題を解消する","description":"scroll-margin-top: 70px; これで解決できます。\nscroll into view fixed headerでググりました。\nhttps://www.bram.us/2020/03/01/prevent-content-from-being-hidden-underneath-a-fixed-header-by-using-scroll-margin-top/\nhttps://stackoverflow.com/questions/13614112/using-scrollintoview-with-a-fixed-position-header\n と思いきや、2021年9月現在Safariで動作しないので、以下の記事のように力技で対応する必要がある。辛い。\nhttps://zenn.dev/catnose99/articles/75d3c69bf71bad","keywords":["CSS"],"articleBody":"scroll-margin-top: 70px; これで解決できます。\nscroll into view fixed headerでググりました。\nhttps://www.bram.us/2020/03/01/prevent-content-from-being-hidden-underneath-a-fixed-header-by-using-scroll-margin-top/\nhttps://stackoverflow.com/questions/13614112/using-scrollintoview-with-a-fixed-position-header\n と思いきや、2021年9月現在Safariで動作しないので、以下の記事のように力技で対応する必要がある。辛い。\nhttps://zenn.dev/catnose99/articles/75d3c69bf71bad\n","wordCount":"12","inLanguage":"en","datePublished":"2021-09-14T22:03:50+09:00","dateModified":"2021-09-14T22:03:50+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://tech-memo.meijin.dev/posts/fixed-header-scroll-view/"},"publisher":{"@type":"Organization","name":"Meijin's Tech Tips","logo":{"@type":"ImageObject","url":"https://texmeijin.github.io/my-tech-memo/favicon.ico"}}}</script>
 </head>
 <body class=dark id=top>
 <script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
-<a href=https://tech-memo.meijin.dev/ accesskey=h title="Meijin Tech Memo (Alt + H)">Meijin Tech Memo</a>
+<a href=https://tech-memo.meijin.dev/ accesskey=h title="Meijin's Tech Tips (Alt + H)">Meijin's Tech Tips</a>
 <span class=logo-switches>
 <button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
 </button>
@@ -126,7 +126,7 @@ https://zenn.dev/catnose99/articles/75d3c69bf71bad">
 </article>
 </main>
 <footer class=footer>
-<span>&copy; 2021 <a href=https://tech-memo.meijin.dev/>Meijin Tech Memo</a></span>
+<span>&copy; 2021 <a href=https://tech-memo.meijin.dev/>Meijin's Tech Tips</a></span>
 <span>
 Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
