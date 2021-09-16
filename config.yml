@@ -1,4 +1,4 @@
-baseURL: 'https://texmeijin.github.io/my-tech-memo/'
+baseURL: 'https://tech-memo.meijin.dev/'
 languageCode: 'ja-JP'
 title: 'Meijin Tech Memo'
 theme: "PaperMod"
@@ -14,8 +14,8 @@ params:
           url: "https://twitter.com/meijin_garden"
         - name: github
           url: "https://github.com/TeXmeijin"
-        - name: dev
-          url: "https://dev.to/texmeijin"
+        - name: zenn
+          url: https://zenn.dev/meijin
     defaultTheme: dark
     ShowReadingTime: true
     ShowShareButtons: true
