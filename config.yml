@@ -5,7 +5,7 @@ theme: "PaperMod"
 
 params:
     env: production
-    description: "Web page where Meijin aggregates my daily learning notes on technology."
+    description: "名人が日々の技術に関するちょっとした学習メモを集約しているWebページです / A web site where Meijin aggregates his daily learning notes on technology."
     homeInfoParams:
       Title: Meijin Tech Memo
       Content: 名人が日々の技術に関するちょっとした学習メモを集約しているWebページです
