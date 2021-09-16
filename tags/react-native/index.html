@@ -61,6 +61,19 @@
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>React Native Webviewでページ内のJavaScriptイベントをアプリ側でハンドリングする
+</h2>
+</header>
+<section class=entry-content>
+<p>こちらに書いてあるまんまなんだけど。
+https://github.com/react-native-webview/react-native-webview/blob/master/docs/Guide.md#communicating-between-js-and-native
+React Native側 onMessage={(event) => { alert(event.nativeEvent.data); }} Webview側 // @ts-ignore window.ReactNativeWebView.postMessage({ status: 'completed' }) windowにReactNativeWebViewというのが生えるのでそれを使って通信するとハンドリングできる。iframeみたい。</p>
+</section>
+<footer class=entry-footer>September 16, 2021&nbsp;·&nbsp;1 min</footer>
+<a class=entry-link aria-label="post link to React Native Webviewでページ内のJavaScriptイベントをアプリ側でハンドリングする" href=https://tech-memo.meijin.dev/posts/rn-webview-javascript-handling/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>React NativeでWebviewを使った際にユーザーのアクションでリロードさせる
 </h2>
 </header>

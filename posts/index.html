@@ -80,6 +80,19 @@ https://github.dev/zenn-dev/zenn-editor/blob/43d8da8b77456c72f3b820f6e5df4ccf69d
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>React Native Webviewでページ内のJavaScriptイベントをアプリ側でハンドリングする
+</h2>
+</header>
+<section class=entry-content>
+<p>こちらに書いてあるまんまなんだけど。
+https://github.com/react-native-webview/react-native-webview/blob/master/docs/Guide.md#communicating-between-js-and-native
+React Native側 onMessage={(event) => { alert(event.nativeEvent.data); }} Webview側 // @ts-ignore window.ReactNativeWebView.postMessage({ status: 'completed' }) windowにReactNativeWebViewというのが生えるのでそれを使って通信するとハンドリングできる。iframeみたい。</p>
+</section>
+<footer class=entry-footer>September 16, 2021&nbsp;·&nbsp;1 min</footer>
+<a class=entry-link aria-label="post link to React Native Webviewでページ内のJavaScriptイベントをアプリ側でハンドリングする" href=https://tech-memo.meijin.dev/posts/rn-webview-javascript-handling/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>React NativeでWebviewを使った際にユーザーのアクションでリロードさせる
 </h2>
 </header>
@@ -181,19 +194,6 @@ X軸方向にスクロールしたとき、要素の両端に到達したとき�
 </section>
 <footer class=entry-footer>September 14, 2021&nbsp;·&nbsp;1 min</footer>
 <a class=entry-link aria-label="post link to overscroll-behavior-x" href=https://tech-memo.meijin.dev/posts/css-overflow-scroll-behavior/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>CSSアニメーションの動きをベジエ曲線にする
-</h2>
-</header>
-<section class=entry-content>
-<p>ease-in-outみたいなデフォルトの動きでは満足しなくなってきたときに使える。
-animation-timing-function: cubic-bezier(0.71, 0.35, 1, -0.6); こちらのサイトでシミュレーションできる
-https://cubic-bezier.com/#.17,.67,.83,.67</p>
-</section>
-<footer class=entry-footer>September 14, 2021&nbsp;·&nbsp;1 min</footer>
-<a class=entry-link aria-label="post link to CSSアニメーションの動きをベジエ曲線にする" href=https://tech-memo.meijin.dev/posts/css-animation-bezier/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
