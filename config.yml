@@ -2,9 +2,9 @@ baseURL: 'https://tech-memo.meijin.dev/'
 languageCode: 'ja-JP'
 title: Meijin's Tech Tips
 theme: "PaperMod"
+googleAnalytics: UA-143780066-1
 
 params:
-    env: production
     description: "名人が技術に関するちょっとしたTipsを書き留めているWebページです / A web page where Meijin writes down little tips about technology."
     homeInfoParams:
       Title: Meijin's Tech Tips
