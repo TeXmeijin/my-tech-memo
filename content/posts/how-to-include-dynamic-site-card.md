@@ -1,6 +1,6 @@
 ---
 title: どうやってZennは本文中のURLを動的にOGP画像つきのCardにしているのか
-date: 2021-09-16T22:03:00+09:00
+date: 2021-09-16T10:03:00+09:00
 tags: [frontend, javascript]
 ---
 

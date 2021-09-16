@@ -1,14 +1,14 @@
 baseURL: 'https://tech-memo.meijin.dev/'
 languageCode: 'ja-JP'
-title: Meijin's Tech Memo
+title: Meijin's Tech Tips
 theme: "PaperMod"
 
 params:
     env: production
-    description: "名人が日々の技術に関するちょっとした学習メモを集約しているWebページです / A web site where Meijin aggregates his daily learning notes on technology."
+    description: "名人が技術に関するちょっとしたTipsを書き留めているWebページです / A web page where Meijin writes down little tips about technology."
     homeInfoParams:
-      Title: Meijin's Tech Memo
-      Content: 名人が日々の技術に関するちょっとした学習メモを集約しているWebページです
+      Title: Meijin's Tech Tips
+      Content: 名人が日々の技術に関するちょっとしたTipsを集約しているWebページです
     socialIcons:
         - name: twitter
           url: "https://twitter.com/meijin_garden"
