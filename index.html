@@ -76,6 +76,21 @@
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Notionに無課金でGoogle Analyticsを設定する方法
+</h2>
+</header>
+<section class=entry-content>
+<p>Notion本体にGoogle Analyticsを埋め込める機能はなく、以下のようにカスタムドメインなども設定できる外部サービスでならGoogle Analyticsが設定できるものと思っていた。
+https://wraptas.com/manual#block-ee356f6cd6f543a4920292cfd5c4ce97 https://super.so/guides/google-analytics ところが、Google Analyticsを埋めたいだけならEmbed機能を使って実現できることを知ったのでやってみたメモ
+https://apption.co/apps/2 この機能を使うだけ。
+https://notion-ga.astrocket.vercel.appというどこの誰が作っているのかわからないドメインなので、動作の安定を取りたいなら前述のサービスを使うのがいいが、取れたら良いな〜くらいの温度感だとこっちを使うほうが手軽でよいなと思った。
+ちなみにこの方法はGA4には対応していないので、該当するプロパティを作るときはユニバーサルアナリティクスで作成しないといけないので注意。</p>
+</section>
+<footer class=entry-footer>September 17, 2021&nbsp;·&nbsp;1 min</footer>
+<a class=entry-link aria-label="post link to Notionに無課金でGoogle Analyticsを設定する方法" href=https://tech-memo.meijin.dev/posts/notion-google-analytics/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>どうやってZennは本文中のURLを動的にOGP画像つきのCardにしているのか
 </h2>
 </header>
@@ -196,18 +211,6 @@ import { css } from 'linaria'; import { ReactNode } from 'react'; type Props = {
 </section>
 <footer class=entry-footer>September 14, 2021&nbsp;·&nbsp;1 min</footer>
 <a class=entry-link aria-label="post link to 文字列に平行四辺形の下線を引く" href=https://tech-memo.meijin.dev/posts/css-skew-underline/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>overscroll-behavior-x
-</h2>
-</header>
-<section class=entry-content>
-<p>背景 overscroll-behavior-x https://developer.mozilla.org/ja/docs/Web/CSS/overscroll-behavior-x
-X軸方向にスクロールしたとき、要素の両端に到達したときブラウザ標準の挙動を引き起こさないために指定する</p>
-</section>
-<footer class=entry-footer>September 14, 2021&nbsp;·&nbsp;1 min</footer>
-<a class=entry-link aria-label="post link to overscroll-behavior-x" href=https://tech-memo.meijin.dev/posts/css-overflow-scroll-behavior/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
