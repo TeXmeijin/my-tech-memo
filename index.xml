@@ -6,7 +6,9 @@ https://notion-ga.astrocket.vercel.appというどこの誰が作っているの
 https://docs.expo.dev/workflow/android-studio-emulator/
 これを見ながら環境のセットアップをする。ゴールとしてはadbコマンドがローカルで動いていたらOK。
 そのままAndroid Studioを起動して、AVD Managerから任意の端末を再生ボタンで起動する。
-起動が終わったら、expo startしているターミナルにてaを押せばAndroidエミュレータ内でアプリが起動する。</description></item><item><title>どうやってZennは本文中のURLを動的にOGP画像つきのCardにしているのか</title><link>https://tech-memo.meijin.dev/posts/how-to-include-dynamic-site-card/</link><pubDate>Thu, 16 Sep 2021 10:03:00 +0900</pubDate><guid>https://tech-memo.meijin.dev/posts/how-to-include-dynamic-site-card/</guid><description>Zennの記事では、本文中のURLがカードとして表示される。
+起動が終わったら、expo startしているターミナルにてaを押せばAndroidエミュレータ内でアプリが起動する。
+アプリ内に最初は画像やファイルがまったくないが、
+画像はカメラアプリから撮影すると入る ファイルは、自分のPCからドラッグアンドドロップするとDownloadsフォルダに入る ので、これでテストができる。</description></item><item><title>どうやってZennは本文中のURLを動的にOGP画像つきのCardにしているのか</title><link>https://tech-memo.meijin.dev/posts/how-to-include-dynamic-site-card/</link><pubDate>Thu, 16 Sep 2021 10:03:00 +0900</pubDate><guid>https://tech-memo.meijin.dev/posts/how-to-include-dynamic-site-card/</guid><description>Zennの記事では、本文中のURLがカードとして表示される。
 https://zenn.dev/meijin/articles/linaria-class-name-config
 これは初期ロード時はPlaceholderが掛かっているため、フロントエンドで動的に表示できていると推測できる。
 この仕組みを少しだけ調査したのでメモ。
