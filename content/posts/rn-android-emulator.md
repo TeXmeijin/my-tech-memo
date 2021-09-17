@@ -22,3 +22,7 @@ https://docs.expo.dev/workflow/android-studio-emulator/
 - ファイルは、自分のPCからドラッグアンドドロップするとDownloadsフォルダに入る
 
 ので、これでテストができる。
+
+---
+
+ReloadなどのメニューはCommand + Mで出せる
