@@ -13,3 +13,12 @@ https://docs.expo.dev/workflow/android-studio-emulator/
 そのままAndroid Studioを起動して、AVD Managerから任意の端末を再生ボタンで起動する。
 
 起動が終わったら、`expo start`しているターミナルにて`a`を押せばAndroidエミュレータ内でアプリが起動する。
+
+---
+
+アプリ内に最初は画像やファイルがまったくないが、
+
+- 画像はカメラアプリから撮影すると入る
+- ファイルは、自分のPCからドラッグアンドドロップするとDownloadsフォルダに入る
+
+ので、これでテストができる。
