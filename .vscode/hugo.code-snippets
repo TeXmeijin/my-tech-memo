@@ -21,7 +21,7 @@
 		"body": [
 			"---",
 			"title: $1",
-			"date: 2021-09-14T22:03:00+09:00",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T00:00:00+09:00",
 			"tags: []",
 			"---"
 		],
