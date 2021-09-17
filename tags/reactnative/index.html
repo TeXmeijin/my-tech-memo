@@ -3,10 +3,11 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Meijin's Tech Tips</title>
+<title>reactnative | Meijin's Tech Tips</title>
+<meta name=keywords content>
 <meta name=description content="名人が技術に関するちょっとしたTipsを書き留めているWebページです / A web page where Meijin writes down little tips about technology.">
 <meta name=author content>
-<link rel=canonical href=https://tech-memo.meijin.dev/>
+<link rel=canonical href=https://tech-memo.meijin.dev/tags/reactnative/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.9f1d947375927e9847272b1f4e9be81336f539e513bf04d52cade31f81cad1af.css integrity="sha256-nx2Uc3WSfphHJysfTpvoEzb1OeUTvwTVLK3jH4HK0a8=" rel="preload stylesheet" as=style>
 <link rel=icon href=https://tech-memo.meijin.dev/favicon.png>
 <link rel=icon type=image/png sizes=16x16 href=https://tech-memo.meijin.dev/favicon-16x16.png>
@@ -16,19 +17,18 @@
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.88.1">
-<link rel=alternate type=application/rss+xml href=https://tech-memo.meijin.dev/index.xml>
+<link rel=alternate type=application/rss+xml href=https://tech-memo.meijin.dev/tags/reactnative/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
 </noscript>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-143780066-1','auto'),ga('send','pageview'))</script><meta property="og:title" content="Meijin's Tech Tips">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-143780066-1','auto'),ga('send','pageview'))</script><meta property="og:title" content="reactnative">
 <meta property="og:description" content="名人が技術に関するちょっとしたTipsを書き留めているWebページです / A web page where Meijin writes down little tips about technology.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://tech-memo.meijin.dev/"><meta property="og:image" content="https://tech-memo.meijin.dev/site-feature-image.png">
+<meta property="og:url" content="https://tech-memo.meijin.dev/tags/reactnative/"><meta property="og:image" content="https://tech-memo.meijin.dev/site-feature-image.png">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://tech-memo.meijin.dev/site-feature-image.png">
-<meta name=twitter:title content="Meijin's Tech Tips">
+<meta name=twitter:title content="reactnative">
 <meta name=twitter:description content="名人が技術に関するちょっとしたTipsを書き留めているWebページです / A web page where Meijin writes down little tips about technology.">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"Meijin's Tech Tips","url":"https://tech-memo.meijin.dev/","description":"名人が技術に関するちょっとしたTipsを書き留めているWebページです / A web page where Meijin writes down little tips about technology.","thumbnailUrl":"https://tech-memo.meijin.dev/favicon.png","sameAs":["https://twitter.com/meijin_garden","https://github.com/TeXmeijin","https://zenn.dev/meijin"]}</script>
 </head>
 <body class="list dark" id=top>
 <script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
@@ -56,60 +56,24 @@
 </nav>
 </header>
 <main class=main>
-<article class=post-entry>
+<header class=page-header><div class=breadcrumbs><a href=https://tech-memo.meijin.dev/>Home</a>&nbsp;»&nbsp;<a href=https://tech-memo.meijin.dev/tags/>Tags</a></div>
+<h1>reactnative</h1>
+</header>
+<article class="post-entry tag-entry">
 <header class=entry-header>
-<h2>文字列に平行四辺形の下線を引く
+<h2>React Native開発用Android Emulatorセットアップ
 </h2>
 </header>
 <section class=entry-content>
-<p>ざっと以下のようなコンポーネントを実装するといい。
-import { css } from 'linaria'; import { ReactNode } from 'react'; type Props = { children: ReactNode; }; const style = css` display: flex; padding: 4px 0; margin-left: 8px; position: relative; white-space: nowrap; z-index: 1; &:after { content: ''; position: absolute; top: 12px; left: -6px; width: calc(100% + 6px); height: 12px; background: #fdfdfd; transform: skewX(-20deg); z-index: -1; } `; export const Underlined = ({ children }: Props) => { return &lt;span className={style}>{children}&lt;/span>; }; ポイント skew transform: skewX(-20deg); これで右方向に少し歪んだ図形が作れる。...</p>
+<p>メモ風に書いておく。
+https://docs.expo.dev/workflow/android-studio-emulator/
+これを見ながら環境のセットアップをする。ゴールとしてはadbコマンドがローカルで動いていたらOK。
+そのままAndroid Studioを起動して、AVD Managerから任意の端末を再生ボタンで起動する。
+起動が終わったら、expo startしているターミナルにてaを押せばAndroidエミュレータ内でアプリが起動する。</p>
 </section>
-<footer class=entry-footer>September 14, 2021&nbsp;·&nbsp;1 min</footer>
-<a class=entry-link aria-label="post link to 文字列に平行四辺形の下線を引く" href=https://tech-memo.meijin.dev/posts/css-skew-underline/></a>
+<footer class=entry-footer>September 17, 2021&nbsp;·&nbsp;1 min</footer>
+<a class=entry-link aria-label="post link to React Native開発用Android Emulatorセットアップ" href=https://tech-memo.meijin.dev/posts/rn-android-emulator/></a>
 </article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>overscroll-behavior-x
-</h2>
-</header>
-<section class=entry-content>
-<p>背景 overscroll-behavior-x https://developer.mozilla.org/ja/docs/Web/CSS/overscroll-behavior-x
-X軸方向にスクロールしたとき、要素の両端に到達したときブラウザ標準の挙動を引き起こさないために指定する</p>
-</section>
-<footer class=entry-footer>September 14, 2021&nbsp;·&nbsp;1 min</footer>
-<a class=entry-link aria-label="post link to overscroll-behavior-x" href=https://tech-memo.meijin.dev/posts/css-overflow-scroll-behavior/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>CSSアニメーションの動きをベジエ曲線にする
-</h2>
-</header>
-<section class=entry-content>
-<p>ease-in-outみたいなデフォルトの動きでは満足しなくなってきたときに使える。
-animation-timing-function: cubic-bezier(0.71, 0.35, 1, -0.6); こちらのサイトでシミュレーションできる
-https://cubic-bezier.com/#.17,.67,.83,.67</p>
-</section>
-<footer class=entry-footer>September 14, 2021&nbsp;·&nbsp;1 min</footer>
-<a class=entry-link aria-label="post link to CSSアニメーションの動きをベジエ曲線にする" href=https://tech-memo.meijin.dev/posts/css-animation-bezier/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>composerで公開されていないライブラリをGitHubから直接利用する
-</h2>
-</header>
-<section class=entry-content>
-<p>https://getcomposer.org/doc/05-repositories.md#package-2
-{ "repositories": [ { "type": "package", "package": { "name": "smarty/smarty", "version": "3.1.7", "dist": { "url": "https://www.smarty.net/files/Smarty-3.1.7.zip", "type": "zip" }, "source": { "url": "http://smarty-php.googlecode.com/svn/", "type": "svn", "reference": "tags/Smarty_3_1_7/distribution/" }, "autoload": { "classmap": ["libs/"] } } } ], "require": { "smarty/smarty": "3.1.*" } } </p>
-</section>
-<footer class=entry-footer>September 13, 2021&nbsp;·&nbsp;1 min</footer>
-<a class=entry-link aria-label="post link to composerで公開されていないライブラリをGitHubから直接利用する" href=https://tech-memo.meijin.dev/posts/composer-package-tips/></a>
-</article>
-<footer class=page-footer>
-<nav class=pagination>
-<a class=prev href=https://tech-memo.meijin.dev/>« Prev Page</a>
-</nav>
-</footer>
 </main>
 <footer class=footer>
 <span>&copy; 2021 <a href=https://tech-memo.meijin.dev/>Meijin's Tech Tips</a></span>

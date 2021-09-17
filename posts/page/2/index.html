@@ -62,6 +62,18 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>文字列に平行四辺形の下線を引く
+</h2>
+</header>
+<section class=entry-content>
+<p>ざっと以下のようなコンポーネントを実装するといい。
+import { css } from 'linaria'; import { ReactNode } from 'react'; type Props = { children: ReactNode; }; const style = css` display: flex; padding: 4px 0; margin-left: 8px; position: relative; white-space: nowrap; z-index: 1; &:after { content: ''; position: absolute; top: 12px; left: -6px; width: calc(100% + 6px); height: 12px; background: #fdfdfd; transform: skewX(-20deg); z-index: -1; } `; export const Underlined = ({ children }: Props) => { return &lt;span className={style}>{children}&lt;/span>; }; ポイント skew transform: skewX(-20deg); これで右方向に少し歪んだ図形が作れる。...</p>
+</section>
+<footer class=entry-footer>September 14, 2021&nbsp;·&nbsp;1 min</footer>
+<a class=entry-link aria-label="post link to 文字列に平行四辺形の下線を引く" href=https://tech-memo.meijin.dev/posts/css-skew-underline/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>overscroll-behavior-x
 </h2>
 </header>

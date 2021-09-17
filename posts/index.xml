@@ -2,7 +2,11 @@
 https://wraptas.com/manual#block-ee356f6cd6f543a4920292cfd5c4ce97 https://super.so/guides/google-analytics ところが、Google Analyticsを埋めたいだけならEmbed機能を使って実現できることを知ったのでやってみたメモ
 https://apption.co/apps/2 この機能を使うだけ。
 https://notion-ga.astrocket.vercel.appというどこの誰が作っているのかわからないドメインなので、動作の安定を取りたいなら前述のサービスを使うのがいいが、取れたら良いな〜くらいの温度感だとこっちを使うほうが手軽でよいなと思った。
-ちなみにこの方法はGA4には対応していないので、該当するプロパティを作るときはユニバーサルアナリティクスで作成しないといけないので注意。</description></item><item><title>どうやってZennは本文中のURLを動的にOGP画像つきのCardにしているのか</title><link>https://tech-memo.meijin.dev/posts/how-to-include-dynamic-site-card/</link><pubDate>Thu, 16 Sep 2021 10:03:00 +0900</pubDate><guid>https://tech-memo.meijin.dev/posts/how-to-include-dynamic-site-card/</guid><description>Zennの記事では、本文中のURLがカードとして表示される。
+ちなみにこの方法はGA4には対応していないので、該当するプロパティを作るときはユニバーサルアナリティクスで作成しないといけないので注意。</description></item><item><title>React Native開発用Android Emulatorセットアップ</title><link>https://tech-memo.meijin.dev/posts/rn-android-emulator/</link><pubDate>Fri, 17 Sep 2021 00:00:00 +0900</pubDate><guid>https://tech-memo.meijin.dev/posts/rn-android-emulator/</guid><description>メモ風に書いておく。
+https://docs.expo.dev/workflow/android-studio-emulator/
+これを見ながら環境のセットアップをする。ゴールとしてはadbコマンドがローカルで動いていたらOK。
+そのままAndroid Studioを起動して、AVD Managerから任意の端末を再生ボタンで起動する。
+起動が終わったら、expo startしているターミナルにてaを押せばAndroidエミュレータ内でアプリが起動する。</description></item><item><title>どうやってZennは本文中のURLを動的にOGP画像つきのCardにしているのか</title><link>https://tech-memo.meijin.dev/posts/how-to-include-dynamic-site-card/</link><pubDate>Thu, 16 Sep 2021 10:03:00 +0900</pubDate><guid>https://tech-memo.meijin.dev/posts/how-to-include-dynamic-site-card/</guid><description>Zennの記事では、本文中のURLがカードとして表示される。
 https://zenn.dev/meijin/articles/linaria-class-name-config
 これは初期ロード時はPlaceholderが掛かっているため、フロントエンドで動的に表示できていると推測できる。
 この仕組みを少しだけ調査したのでメモ。
