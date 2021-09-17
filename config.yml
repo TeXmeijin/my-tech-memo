@@ -25,7 +25,7 @@ params:
     images:
       - site-feature-image.png
     assets:
-      favicon: "https://texmeijin.github.io/my-tech-memo/favicon.ico"
+      favicon: "/favicon.png"
 
 menu:
   main:
