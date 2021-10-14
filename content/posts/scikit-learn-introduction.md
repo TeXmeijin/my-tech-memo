@@ -54,5 +54,10 @@ classification: samples belong to two or more classes and we want to learn from 
 ちょっと文法がダメすぎるというか、長い文章になると主語述語が読み取れなくて辛い。学びなおしかなぁ
 
 regression: if the desired output consists of one or more continuous variables, then the task is called regression. An example of a regression problem would be the prediction of the length of a salmon as a function of its age and weight.
+> 自分の和訳：回帰：望んでいる出力が一つまたはそれ以上の連続した値で構成されている場合、そのタスクを回帰と呼びます。回帰問題の一例として、鮭の年齢と重さからその長さを予想する問題があります。
+
+> 回帰：目的の出力が1つ以上の連続変数で構成されている場合、その作業は回帰と呼ばれます。回帰問題の例としては、サケの体長を年齢と体重の関数として予測することが挙げられる。
 
 unsupervised learning, in which the training data consists of a set of input vectors x without any corresponding target values. The goal in such problems may be to discover groups of similar examples within the data, where it is called clustering, or to determine the distribution of data within the input space, known as density estimation, or to project the data from a high-dimensional space down to two or three dimensions for the purpose of visualization (Click here to go to the Scikit-Learn unsupervised learning page).
+
+> 教師なし学習：このような問題では、学習データが、対応する目標値のない入力ベクトルxのセットで構成されています。このような問題の目的は，データの中から類似した例のグループを発見すること（クラスタリングと呼ばれます），入力空間内のデータの分布を決定すること（密度推定と呼ばれます），データを高次元空間から2次元または3次元に投影して可視化することなどがあります（ここをクリックすると，Scikit-Learnの教師なし学習のページが表示されます）．
