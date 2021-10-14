@@ -6,6 +6,7 @@
 <title>Rust製Tmux代替のZellijに入門 | Meijin's Tech Tips</title>
 <meta name=keywords content="shell,zellij">
 <meta name=description content="Macにtmuxを入れたくなったけど、もうこのご時世だしRust製の類似品が誰かによって作られているのではと思ったらあった。
+インストール cargoで入れることができる。cargoが古いと入らないので、その場合はcargo自体を入れ直すとよい
 基本操作  c-p でペインモード。操作法は画面下部に出てくる。同じくc-pで編集モードに戻れることに注意 キーバインドは~/.config/zellij/config.yamlに掻き集めて編集する。Ctrl-rが取られていたのでそこの設定を書き換えた。c-zにしてある c-t でタブモードらしいがまだ使っていない  公式Doc https://zellij.dev/documentation/commands.html
 記事 https://zenn.dev/gosarami/articles/4becaa18273216fec5ee">
 <meta name=author content>
@@ -25,6 +26,7 @@
 </noscript>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-143780066-1','auto'),ga('send','pageview'))</script><meta property="og:title" content="Rust製Tmux代替のZellijに入門">
 <meta property="og:description" content="Macにtmuxを入れたくなったけど、もうこのご時世だしRust製の類似品が誰かによって作られているのではと思ったらあった。
+インストール cargoで入れることができる。cargoが古いと入らないので、その場合はcargo自体を入れ直すとよい
 基本操作  c-p でペインモード。操作法は画面下部に出てくる。同じくc-pで編集モードに戻れることに注意 キーバインドは~/.config/zellij/config.yamlに掻き集めて編集する。Ctrl-rが取られていたのでそこの設定を書き換えた。c-zにしてある c-t でタブモードらしいがまだ使っていない  公式Doc https://zellij.dev/documentation/commands.html
 記事 https://zenn.dev/gosarami/articles/4becaa18273216fec5ee">
 <meta property="og:type" content="article">
@@ -35,10 +37,11 @@
 <meta name=twitter:image content="https://tech-memo.meijin.dev/site-feature-image.png">
 <meta name=twitter:title content="Rust製Tmux代替のZellijに入門">
 <meta name=twitter:description content="Macにtmuxを入れたくなったけど、もうこのご時世だしRust製の類似品が誰かによって作られているのではと思ったらあった。
+インストール cargoで入れることができる。cargoが古いと入らないので、その場合はcargo自体を入れ直すとよい
 基本操作  c-p でペインモード。操作法は画面下部に出てくる。同じくc-pで編集モードに戻れることに注意 キーバインドは~/.config/zellij/config.yamlに掻き集めて編集する。Ctrl-rが取られていたのでそこの設定を書き換えた。c-zにしてある c-t でタブモードらしいがまだ使っていない  公式Doc https://zellij.dev/documentation/commands.html
 記事 https://zenn.dev/gosarami/articles/4becaa18273216fec5ee">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://tech-memo.meijin.dev/posts/"},{"@type":"ListItem","position":2,"name":"Rust製Tmux代替のZellijに入門","item":"https://tech-memo.meijin.dev/posts/zellij-intro/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Rust製Tmux代替のZellijに入門","name":"Rust製Tmux代替のZellijに入門","description":"Macにtmuxを入れたくなったけど、もうこのご時世だしRust製の類似品が誰かによって作られているのではと思ったらあった。\n基本操作  c-p でペインモード。操作法は画面下部に出てくる。同じくc-pで編集モードに戻れることに注意 キーバインドは~/.config/zellij/config.yamlに掻き集めて編集する。Ctrl-rが取られていたのでそこの設定を書き換えた。c-zにしてある c-t でタブモードらしいがまだ使っていない  公式Doc https://zellij.dev/documentation/commands.html\n記事 https://zenn.dev/gosarami/articles/4becaa18273216fec5ee","keywords":["shell","zellij"],"articleBody":"Macにtmuxを入れたくなったけど、もうこのご時世だしRust製の類似品が誰かによって作られているのではと思ったらあった。\n基本操作  c-p でペインモード。操作法は画面下部に出てくる。同じくc-pで編集モードに戻れることに注意 キーバインドは~/.config/zellij/config.yamlに掻き集めて編集する。Ctrl-rが取られていたのでそこの設定を書き換えた。c-zにしてある c-t でタブモードらしいがまだ使っていない  公式Doc https://zellij.dev/documentation/commands.html\n記事 https://zenn.dev/gosarami/articles/4becaa18273216fec5ee\n","wordCount":"11","inLanguage":"en","datePublished":"2021-10-14T00:00:00+09:00","dateModified":"2021-10-14T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://tech-memo.meijin.dev/posts/zellij-intro/"},"publisher":{"@type":"Organization","name":"Meijin's Tech Tips","logo":{"@type":"ImageObject","url":"https://tech-memo.meijin.dev/favicon.png"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Rust製Tmux代替のZellijに入門","name":"Rust製Tmux代替のZellijに入門","description":"Macにtmuxを入れたくなったけど、もうこのご時世だしRust製の類似品が誰かによって作られているのではと思ったらあった。\nインストール cargoで入れることができる。cargoが古いと入らないので、その場合はcargo自体を入れ直すとよい\n基本操作  c-p でペインモード。操作法は画面下部に出てくる。同じくc-pで編集モードに戻れることに注意 キーバインドは~/.config/zellij/config.yamlに掻き集めて編集する。Ctrl-rが取られていたのでそこの設定を書き換えた。c-zにしてある c-t でタブモードらしいがまだ使っていない  公式Doc https://zellij.dev/documentation/commands.html\n記事 https://zenn.dev/gosarami/articles/4becaa18273216fec5ee","keywords":["shell","zellij"],"articleBody":"Macにtmuxを入れたくなったけど、もうこのご時世だしRust製の類似品が誰かによって作られているのではと思ったらあった。\nインストール cargoで入れることができる。cargoが古いと入らないので、その場合はcargo自体を入れ直すとよい\n基本操作  c-p でペインモード。操作法は画面下部に出てくる。同じくc-pで編集モードに戻れることに注意 キーバインドは~/.config/zellij/config.yamlに掻き集めて編集する。Ctrl-rが取られていたのでそこの設定を書き換えた。c-zにしてある c-t でタブモードらしいがまだ使っていない  公式Doc https://zellij.dev/documentation/commands.html\n記事 https://zenn.dev/gosarami/articles/4becaa18273216fec5ee\n","wordCount":"13","inLanguage":"en","datePublished":"2021-10-14T00:00:00+09:00","dateModified":"2021-10-14T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://tech-memo.meijin.dev/posts/zellij-intro/"},"publisher":{"@type":"Organization","name":"Meijin's Tech Tips","logo":{"@type":"ImageObject","url":"https://tech-memo.meijin.dev/favicon.png"}}}</script>
 </head>
 <body class=dark id=top>
 <script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
@@ -76,6 +79,8 @@ Rust製Tmux代替のZellijに入門
 </div>
 </header>
 <div class=post-content><p>Macにtmuxを入れたくなったけど、もうこのご時世だしRust製の類似品が誰かによって作られているのではと思ったらあった。</p>
+<h2 id=インストール>インストール<a hidden class=anchor aria-hidden=true href=#インストール>#</a></h2>
+<p>cargoで入れることができる。cargoが古いと入らないので、その場合はcargo自体を入れ直すとよい</p>
 <h2 id=基本操作>基本操作<a hidden class=anchor aria-hidden=true href=#基本操作>#</a></h2>
 <ul>
 <li>c-p でペインモード。操作法は画面下部に出てくる。同じくc-pで編集モードに戻れることに注意</li>
